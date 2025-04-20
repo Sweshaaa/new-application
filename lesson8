@@ -1,0 +1,33 @@
+package com.example.myapplication
+
+//function
+
+// example
+
+fun show(a:int, b:int): unit {
+    println("You entered $a and $b")
+}
+fun add(a: Int, b: int): Int{
+    var sum = 0
+    sum = atb
+    return sum
+}
+fun findMinimumNumber( a: Int, b: Int): Int{
+    var minimum = 0
+    if (a>b){
+        minimum = b
+    }else{
+        minimum = a
+    }
+    return minimim
+}
+
+println("Enter first number : ")
+        var a: Int= reAdln()!!. toInt();
+println("Enter second number :")
+        var b: Int = Readln()!!.tpInt();
+show(a, b)
+        var sum = add(a,b)
+printLn("sum of the two entered number is $sum")
+        var minimum = findMinimunNumber(a, b)
+println("and the smallest between $a and $b is $minimum")
