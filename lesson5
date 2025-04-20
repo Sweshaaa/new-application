@@ -1,0 +1,67 @@
+package com.example.myapplication
+            //List
+
+fun displayList(){
+    val numbers:list<string> =listOf("one","two","three","four")
+
+        println("Number of elements;${Numbers.size}")
+        println("third element:${Numbers.get(2)}")
+        println("fourth element:${Numbers[3]}")
+        println("index of element\"two\" ${Numbers.indexof("two")}")
+
+    }
+                   // Mutable and immutable list
+
+fun main(){
+    //immutable List
+    val lst = listOf("one","two","three")
+    println("mutable list")
+    for(i in lst.indices){
+        println(lst[i])
+    }
+    println()
+    //mutable list
+    val mutablelst=mutableListOf("one","two","three")
+    mutablelst.add("four")
+    println("Immutable list")
+    for (i in mutablelst.indices){
+        println(mutablelst[i])
+    }
+}
+
+//output
+//Mutable list
+//one
+//two
+//three
+       
+//Immutable list
+//one
+//two
+//three
+//four
+
+                     //Set  
+
+fun set(){
+    val numbers=setOf(1,2,3,4)
+    for (elements in numbers){
+        printin(elements)
+    }
+    val numbersbackwards = SetOf(4,3,2,1)
+    println("the sets are equal:${numbers==numbersbackwards}")
+}
+                      
+                         //Map
+
+fun map(){
+    val countriesCapitals=mapOf(
+        "nepal" to  "kathmandu",
+        "china" to "Beijing",
+        "India" to " New delhi",
+    )
+    println("All keys:${countriesCapitals.keys}")
+    println("All values:${countriesCapitals.values}")
+    
+    println("capital of nepal is:${countriescapitals["nepal"]}")
+}
