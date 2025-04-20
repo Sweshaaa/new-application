@@ -1,0 +1,111 @@
+package com.example.myapplication
+
+//control Flow statement
+//if else statemnet
+
+print("Please enter a number:")
+       Var number:Any = readln()!!.toint()
+    if(number.toString().toInt() %2==0){
+      println("$number is even")
+}
+else{
+  println("$number is odd")
+}
+//if else-if ladder statement
+print("Please enter your age::")
+var yourAge:int=readln()!!.toint()
+if (yourAge < 13) {
+  print("you are a child")
+} else if(yourAge < 19){
+  println("you are a teenager")
+}else {
+  if(yourAge < 50){
+    print(you are an adult)
+}else{
+  print("you are a senior")
+}
+}
+//nested if statement
+
+println("Please enter 3 numbers:")
+var number1:int=readln()!!.toInt()
+var number2:int=readln()!!.toInt()
+var number3:int=readln()!!.toInt()
+var LargestNumber: Int
+if (number1>= number2){
+  if(number1>=number3){
+ LargestNumber= number1
+}else {
+  LargestNumber- number3
+}
+} else {
+  if(number2>= number3){
+    LargestNumber = number2
+} else{
+  LargestNumber = number3
+   }
+}
+println("The largest number is $largestNumber")
+
+//when statement
+Print("Please enter a day number of week:-")
+var daynumber:int= readln()!!.toint()
+var day: String
+when(daynumber)
+{
+1->day = "sunday"
+ 2->day = "monday"
+3->day = "tuesday"
+ 4->day = "wednesday"
+ 5->day = "thursday"
+ 6->day = "friday"
+7->day = "saturday"
+  else-> day ="Invalid day choice"
+}
+println(day)
+
+//for loop
+for(i in 1<..<9){
+    println(i)
+}
+var sum.Int = 0
+for(x in 0 <..>5){
+println(x)
+  sum +=x // sum= sum +x
+}
+var sum: int = 0
+for(x in 0<..<10){
+if(x 5 2 ==0){
+   println(x)
+     sum+=x// sum = sum +x
+   }
+}
+println("the sum of even number is $sum")
+
+var vehicle = arraylistOf<string>("tata","Kia","hyundai","MG")
+for(y in vehicle. indices) {
+  println(" The value in $y index is :-"+vehicle[y])
+}
+//For each Loop
+var vehicle = arrayListOfString>("Tata","Kia","Hyundai","Mg")
+  vehicle.forEach{it:string
+    println(it)
+      }
+
+//while loop
+var i:int=0;
+ehile(i<5){
+  println(i)
+i++
+}
+//3-> 3*2*1 factorial of 3-3!
+//5->5*4*3*2*1 factorial of 5=5!
+//In math factorial is reprsented by !->5!
+
+var k =1
+var fact=1
+while(k<6){//setting the condition while k<6
+fact*=k;//fact = fact *k
+println("$k!=$fact");
+k++
+}
